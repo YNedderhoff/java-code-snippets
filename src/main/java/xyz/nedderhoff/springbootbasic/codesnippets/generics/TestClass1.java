@@ -1,4 +1,4 @@
-package xyz.nedderhoff.springbootbasic.generics;
+package xyz.nedderhoff.springbootbasic.codesnippets.generics;
 
 public class TestClass1 extends AbstractTestClass1<String, TestClass2> {
 

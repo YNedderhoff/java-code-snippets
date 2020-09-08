@@ -1,8 +1,8 @@
-package xyz.nedderhoff.springbootbasic.concurrency;
+package xyz.nedderhoff.springbootbasic.codesnippets.concurrency;
 
 import java.util.concurrent.CompletableFuture;
 
-public class CompFuture {
+public class CompletableFutureSnippets {
 
     public static void main(String[] args) {
         Runnable test = new Runnable() {
@@ -17,7 +17,7 @@ public class CompFuture {
         };
         CompletableFuture
                 .runAsync(test)
-                .exceptionally(CompFuture::handle);
+                .exceptionally(CompletableFutureSnippets::handle);
     }
 
     private static void run(String thisIsAParam) {
