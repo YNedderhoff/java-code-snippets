@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Test Author",
+    "authorBooks": [
+      {
+        "id": 3,
+        "isMainAuthor": true
+      }
+    ]
+  }
+]

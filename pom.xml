@@ -16,6 +16,9 @@
         <!-- Java -->
         <java.version>11</java.version>
         <!-- Maven -->
+        <maven-failsafe-version>3.0.0-M5</maven-failsafe-version>
+        <maven-surefire-version>2.14.1</maven-surefire-version>
+        <!-- Others -->
         <guava-version>29.0-jre</guava-version>
         <handlebars-version>4.2.0</handlebars-version>
         <jackson-version>2.11.2</jackson-version>
@@ -42,6 +45,11 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>javax.ws.rs</groupId>
@@ -80,6 +88,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
@@ -97,6 +109,16 @@
                     <groupId>com.github.ekryd.sortpom</groupId>
                     <artifactId>sortpom-maven-plugin</artifactId>
                     <version>${sortpom-maven-plugin-version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>${maven-failsafe-version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven-surefire-version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -125,6 +147,22 @@
                         <phase>verify</phase>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

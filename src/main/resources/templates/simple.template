@@ -1,9 +1,9 @@
 {{#if this.myarray}}
-    if works
+if works
 {{/if}}
 
 {{#each this.myarray}}
-    each works
+each works
 {{/each}}
 
 test
