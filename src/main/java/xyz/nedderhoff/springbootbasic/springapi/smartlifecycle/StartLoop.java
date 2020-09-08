@@ -1,4 +1,4 @@
-package xyz.nedderhoff.springbootbasic.springapi;
+package xyz.nedderhoff.springbootbasic.springapi.smartlifecycle;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,6 +16,9 @@ import org.springframework.context.SmartLifecycle;
 import org.springframework.stereotype.Component;
 
 import com.google.common.collect.ImmutableList;
+
+import xyz.nedderhoff.springbootbasic.springapi.baseapi.MyEnum;
+import xyz.nedderhoff.springbootbasic.springapi.baseapi.PlayComponent;
 
 @Component
 public class StartLoop implements SmartLifecycle {

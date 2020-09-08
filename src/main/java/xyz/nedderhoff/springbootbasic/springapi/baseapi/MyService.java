@@ -1,4 +1,4 @@
-package xyz.nedderhoff.springbootbasic.springapi;
+package xyz.nedderhoff.springbootbasic.springapi.baseapi;
 
 import java.net.SocketTimeoutException;
 import java.util.Optional;

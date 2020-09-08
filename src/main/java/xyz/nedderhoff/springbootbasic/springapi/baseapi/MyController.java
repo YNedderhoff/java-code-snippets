@@ -1,4 +1,4 @@
-package xyz.nedderhoff.springbootbasic.springapi;
+package xyz.nedderhoff.springbootbasic.springapi.baseapi;
 
 import java.util.Optional;
 
