@@ -1,0 +1,9 @@
+{{#if this.myarray}}
+    if works
+{{/if}}
+
+{{#each this.myarray}}
+    each works
+{{/each}}
+
+test

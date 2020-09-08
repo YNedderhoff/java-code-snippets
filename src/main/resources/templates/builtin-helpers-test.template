@@ -1,0 +1,15 @@
+{
+    title: {{title}}
+    story: {
+        {{#with story}}
+        name: {{name}}
+        {{/with}}
+    }
+    authors: {
+        {{#each authors}}
+        author: "{{firstName}} {{lastName}}"
+        {{/each}}
+    }
+    published: {{#if published}}Yes{{else}}No{{/if}}
+    copyright: {{#unless copyright}}Yes{{/unless}}
+}
