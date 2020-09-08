@@ -3,12 +3,13 @@ package xyz.nedderhoff.springbootbasic.springapi;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-@RestController
+@Controller
 public class MyController {
 
     private final MyService service;
@@ -18,8 +19,8 @@ public class MyController {
         this.service = service;
     }
 
-    @RequestMapping(value = "/get", method = RequestMethod.GET)
-    public String get() {
+    @GetMapping("get")
+    public  @ResponseBody String get() {
         Optional<String> s = service.get();
         if (s.isPresent()){
             return s.get();
@@ -28,8 +29,8 @@ public class MyController {
         }
     }
 
-    @RequestMapping(value = "/test", method = RequestMethod.POST)
-    public String post1(@RequestBody RequestObj1 body){
+    @PostMapping("test")
+    public @ResponseBody String post1(@RequestBody RequestObj1 body){
         return "done";
     }
 
