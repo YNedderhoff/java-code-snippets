@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 
@@ -17,7 +16,6 @@ import org.springframework.context.SmartLifecycle;
 import org.springframework.stereotype.Component;
 
 import com.google.common.collect.ImmutableList;
-
 
 @Component
 public class StartLoop implements SmartLifecycle {
