@@ -3,7 +3,6 @@ package xyz.nedderhoff.springbootbasic.springapi;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -35,7 +34,7 @@ public class MyController {
     }
 
 
-    private class RequestObj1 {
+    private static class RequestObj1 {
         final String myString;
 
         private RequestObj1(String myString) {

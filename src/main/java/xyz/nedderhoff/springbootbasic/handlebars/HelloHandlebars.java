@@ -2,6 +2,7 @@ package xyz.nedderhoff.springbootbasic.handlebars;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +37,7 @@ public class HelloHandlebars {
         Handlebars handlebars = new Handlebars(classPathTemplateLoader);
         Template template2 = handlebars.compile("simple");
         List<String> hashtags = Arrays.asList("hashtag1", "hashtag2");
-        List<String> hashtags2 = Arrays.asList();
+        List<String> hashtags2 = Collections.emptyList();
         Map<String, Object> mymap = new HashMap<>();
         mymap.put("myarray", null);
         System.out.println(template2.apply(mymap));
