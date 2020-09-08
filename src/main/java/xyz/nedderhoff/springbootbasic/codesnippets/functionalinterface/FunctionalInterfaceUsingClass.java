@@ -1,4 +1,4 @@
-package xyz.nedderhoff.springbootbasic.functionalinterface;
+package xyz.nedderhoff.springbootbasic.codesnippets.functionalinterface;
 
 public class FunctionalInterfaceUsingClass {
 

@@ -1,4 +1,4 @@
-package xyz.nedderhoff.springbootbasic.time;
+package xyz.nedderhoff.springbootbasic.codesnippets.time;
 
 import java.sql.Timestamp;
 import java.time.Instant;
@@ -7,7 +7,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class MyTime {
+public class TimeSnippets {
     public static void main(String[] args) {
         Timestamp timestamp = Timestamp.from(Instant.now());
 

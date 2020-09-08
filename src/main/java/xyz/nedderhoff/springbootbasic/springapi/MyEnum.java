@@ -10,7 +10,7 @@ public enum MyEnum {
     SECOND("second"),
     THIRD("third");
 
-    private String value;
+    private final String value;
     private String topic;
     private static final List<String> stringValues;
 
@@ -20,7 +20,7 @@ public enum MyEnum {
                 .collect(Collectors.toList());
     }
 
-    private static Map<String, MyEnum> stingToEnumMap;
+    private static final Map<String, MyEnum> stingToEnumMap;
 
     static {
         stingToEnumMap = Arrays.stream(MyEnum.values())
