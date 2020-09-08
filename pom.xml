@@ -17,7 +17,7 @@
         <java.version>11</java.version>
         <!-- Maven -->
         <guava-version>29.0-jre</guava-version>
-        <handlebars-version>4.0.5</handlebars-version>
+        <handlebars-version>4.2.0</handlebars-version>
         <jackson-version>2.7.3</jackson-version>
         <javax-version>2.1.1</javax-version>
         <jersey-client-version>2.30</jersey-client-version>
