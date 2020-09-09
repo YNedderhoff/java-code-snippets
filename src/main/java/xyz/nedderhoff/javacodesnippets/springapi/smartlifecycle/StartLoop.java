@@ -1,8 +1,5 @@
 package xyz.nedderhoff.javacodesnippets.springapi.smartlifecycle;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
@@ -99,6 +96,7 @@ public class StartLoop implements SmartLifecycle {
     }
 
     private void runMyCode() {
+        /*
         String content = null;
         try {
             content = new String(Files.readAllBytes(Paths.get("myjson.json")));
@@ -106,6 +104,7 @@ public class StartLoop implements SmartLifecycle {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        */
 
         System.out.println("Enum name " + MyEnum.FIRST.getValue());
         MyEnum.getStringValues()
