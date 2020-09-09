@@ -17,7 +17,7 @@
         <java.version>11</java.version>
         <!-- Maven -->
         <maven-failsafe-version>3.0.0-M5</maven-failsafe-version>
-        <maven-surefire-version>2.14.1</maven-surefire-version>
+        <maven-surefire-version>2.22.2</maven-surefire-version>
         <!-- Others -->
         <guava-version>29.0-jre</guava-version>
         <handlebars-version>4.2.0</handlebars-version>
