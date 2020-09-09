@@ -196,4 +196,9 @@
             </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git@github.com:YNedderhoff/java-code-snippets.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 </project>
