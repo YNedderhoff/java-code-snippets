@@ -24,6 +24,13 @@ jobs:
         run: mvn -B test --file pom.xml
       - name: Verify with Maven
         run: mvn -B verify --file pom.xml
-      - name: Release new version with Gitflow
-        run: mvn -B clean gitflow:release gitflow:support-start
+      - name: Release
+        uses: qcastel/github-actions-maven-release@v1.0.3
+        with:
+          release-branch-name: "master"
+
+          git-release-bot-name: "release-bot"
+          git-release-bot-email: "github-releases@nedderhoff.xyz"
+
+          access-token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
 
