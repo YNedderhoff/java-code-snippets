@@ -198,8 +198,8 @@
     </build>
 
     <scm>
-        <connection>scm:git@github.com:YNedderhoff/java-code-snippets.git</connection>
-        <developerConnection>scm:git@github.com:YNedderhoff/java-code-snippets.git</developerConnection>
+        <connection>scm:git:git@github.com:YNedderhoff/java-code-snippets.git</connection>
+        <developerConnection>scm:git:git@github.com:YNedderhoff/java-code-snippets.git</developerConnection>
         <url>https://github.com/YNedderhoff/java-code-snippets.git</url>
         <tag>HEAD</tag>
     </scm>
