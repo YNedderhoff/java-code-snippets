@@ -24,15 +24,15 @@ jobs:
         run: mvn -B test --file pom.xml
       - name: Verify with Maven
         run: mvn -B verify --file pom.xml
-      - name: Release with Maven
-        uses: qcastel/github-actions-maven-release@v1.12.5
-        env:
-          JAVA_HOME: /usr/lib/jvm/java-11-openjdk/
-        with:
-          release-branch-name: "master"
-          maven-args: "-Dmaven.javadoc.skip=true -DskipTests -DskipITs -Ddockerfile.skip -DdockerCompose.skip"
-          git-release-bot-name: "release-bot"
-          git-release-bot-email: "release-bot@github.com"
-          access-token: ${{ secrets.GITHUB_TOKEN }}
-          skip-perform: true
+      #- name: Release with Maven
+      #  uses: qcastel/github-actions-maven-release@v1.12.5
+      #  env:
+      #    JAVA_HOME: /usr/lib/jvm/java-11-openjdk/
+      #  with:
+      #    release-branch-name: "master"
+      #    maven-args: "-Dmaven.javadoc.skip=true -DskipTests -DskipITs -Ddockerfile.skip -DdockerCompose.skip"
+      #    git-release-bot-name: "release-bot"
+      #    git-release-bot-email: "release-bot@github.com"
+      #    access-token: ${{ secrets.GITHUB_TOKEN }}
+      #    skip-perform: true
 
