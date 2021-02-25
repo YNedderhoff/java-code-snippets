@@ -25,7 +25,7 @@ jobs:
       - name: Verify with Maven
         run: mvn -B verify --file pom.xml
       - name: Release with Maven
-        uses: qcastel/github-actions-maven-release@master
+        uses: qcastel/github-actions-maven-release@v1.12.5
         env:
           JAVA_HOME: /usr/lib/jvm/java-11-openjdk/
         with:
