@@ -14,7 +14,7 @@
 
     <properties>
         <!-- Java -->
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <!-- Maven -->
         <maven-failsafe-version>3.0.0-M5</maven-failsafe-version>
         <maven-surefire-version>2.22.2</maven-surefire-version>
