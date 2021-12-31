@@ -28,7 +28,7 @@
         <joda-time-version>2.10.10</joda-time-version>
         <logstash-logback-encoder-version>6.6</logstash-logback-encoder-version>
         <lucene-version>8.8.1</lucene-version>
-        <sortpom-maven-plugin-version>2.15.0</sortpom-maven-plugin-version>
+        <sortpom-maven-plugin-version>3.0.1</sortpom-maven-plugin-version>
     </properties>
 
     <dependencies>
