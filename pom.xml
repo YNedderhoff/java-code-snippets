@@ -24,7 +24,7 @@
         <handlebars-version>4.2.0</handlebars-version>
         <jackson-version>2.12.2</jackson-version>
         <javax-version>2.1.1</javax-version>
-        <jersey-client-version>2.31</jersey-client-version>
+        <jersey-client-version>3.1.0</jersey-client-version>
         <joda-time-version>2.10.10</joda-time-version>
         <logstash-logback-encoder-version>6.6</logstash-logback-encoder-version>
         <lucene-version>8.8.1</lucene-version>
