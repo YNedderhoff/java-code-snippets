@@ -17,7 +17,7 @@
         <java.version>17</java.version>
         <!-- Maven -->
         <maven-failsafe-version>3.0.0-M5</maven-failsafe-version>
-        <maven-surefire-version>2.22.2</maven-surefire-version>
+        <maven-surefire-version>3.0.0</maven-surefire-version>
         <gitflow-maven-plugin-version>1.16.0</gitflow-maven-plugin-version>
         <!-- Others -->
         <guava-version>30.1.1-jre</guava-version>
